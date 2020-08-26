@@ -1,0 +1,110 @@
+/*Set style for divs with class container*/
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*Set style when the user hovers over a link in the navigation bar*/
+.navbar a:hover {
+  background: #6df1a9;
+}
+
+/*Set background color and border for navbar*/
+nav {
+  background-color: #f3f3ee;
+  border-top: solid;
+  border-bottom: solid;
+}
+
+/*Center h1 with class title, set font and background color and make the size responsive*/
+h1.title {
+  color: black;
+  background-color: #6df1a9;
+  margin-bottom: 0px;
+  font-size: 7vw;
+}
+
+/*Adjust size for small titles beneath the pictures*/
+.small-title {
+  font-size: 1.2em;
+}
+
+img {
+  height: 90%;
+  width: 100%;
+}
+
+img.logo {
+  height: 60%;
+  width: 50%;
+}
+/*Make images with class small responsive*/
+img.small {
+  max-width: 30%;
+  max-height: 65%;
+  min-width: 30%;
+  min-height: 45%;
+  height: 90%;
+  width: 100%;
+}
+
+/*Set style for pictures with polaroid effect*/
+div.polaroid {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*Align text to the left for information sections in About page*/
+.info {
+  text-align: left;
+}
+
+/*Set background color for odd sections*/
+.odd {
+  border: solid #2ca5df;
+}
+
+/*Set background color for even sections*/
+.even {
+  background-color: #bbe3f5;
+}
+
+/*Set background color for footer*/
+footer {
+  background-color: #6df1a9;
+  padding: 2px;
+}
+
+.jumbotron {
+  background-color: #6df1a9;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+}
+
+.icon {
+  height: 2rem;
+  width: 2rem;
+}
+
+ul li {
+  padding: 10px;
+  margin: 20px;
+}
+
+ul.navbar-bar,
+li.nav-item,
+li.menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+.underlined {
+  text-decoration: underline;
+}

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta data and title-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Felipe Escobar</title>
+    <meta name="author" content="Felipe Escobar" />
+    <meta
+      name="description"
+      content="Personal website wih basic info about Felipe Escobar"
+    />
+    <!--Links to bootsrap css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!--Link to the styles file-->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <!--Body-->
+  <body>
+    <header>
+      <div id="header-placeholder"></div>
+      <script>
+        $.get("header.html", function (data) {
+          $("#header-placeholder").replaceWith(data);
+        });
+      </script>
+    </header>
+
+    <nav id="nav-placeholder">
+      <script>
+        $.get("nav.html", function (data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+    </nav>
+
+    <br />
+    <main>
+      <!--Content menu-->
+      <div class="container">
+        <h2 class="text-left">Content:</h2>
+        <ul class="menu">
+          <li class="text-left menu">
+            <a href="#experience">Experience</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#academic">Academic background</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#languages">Languages</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#tech">Technology</a>
+          </li>
+        </ul>
+      </div>
+      <br />
+      <!--Section for professional experience-->
+      <div class="container odd" id="experience">
+        <div class="row">
+          <div class="col-sm-3">
+            <h2 class="text-left">Experience:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      TEACHING ASSISTANT IN
+                      <span class="font-italic">FINANCE</span>
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      AUG 2019 – DEC 2019 • (Fixed-term contract).
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+                <p class="text-left">
+                  <span class="underlined">Course main topics:</span>
+                  Introduction to Corporate Finance including Efficient Market
+                  Hypothesis, bonds and stocks, portfolio theory, asset pricing
+                  models (CAPM), cost of capital under uncertainty, risk and
+                  return, capital structure.
+                </p>
+                <p class="text-left">
+                  <span class="underlined">Responsibilities:</span> Grade the
+                  students’ tasks and exams. Monitor the students during the
+                  exams. Support the logistics management for the course
+                  activities.
+                </p>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      TEACHING ASSISTANT IN
+                      <span class="font-italic"
+                        >ALGORITHMIC AND OBJECT-ORIENTED PROGRAMMING I</span
+                      >
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      AUG 2018 – DEC 2018 & JAN 2019 – MAY 2019 • (Fixed-term
+                      contract).
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+                <p class="text-left">
+                  <span class="underlined">Course main topics:</span>
+                  Java introduction course. The goal is that the student has the
+                  capacity to build a simple Java application.
+                </p>
+                <p class="text-left">
+                  <span class="underlined">Responsibilities:</span> Grade the
+                  students’ tasks and exams. Monitor the students during the
+                  exams and laboratories and support them by answering
+                  questions.
+                </p>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">RESEARCH INTERN</p>
+                    <p class="text-left font-weight-light">
+                      HAVAS MEDIA - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      DEC 2018 – JAN 2019 • (Fixed-term contract).
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/havas.png"
+                      alt="Havas Media logo"
+                    />
+                  </div>
+                </div>
+                <p class="text-left">
+                  <span class="underlined">About the company:</span>
+                  Publicity, communications and media agency with presence in
+                  more than 140 countries.
+                </p>
+                <p class="text-left">
+                  <span class="underlined">Responsibilities:</span> Tabulate the
+                  results of multiple perception surveys about the clients’ and
+                  competitors’ products. Generate the corresponding reports.
+                </p>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      TEACHING ASSISTANT IN
+                      <span class="font-italic">OPTIMIZATION PRINCIPLES </span>
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      AUG 2017 – DEC 2017 • (Fixed-term contract).
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+                <p class="text-left">
+                  <span class="underlined">Course main topics:</span>
+                  Mathematical modeling, linear optimization algorithms, problem
+                  formulation and implementation in specialized software.
+                </p>
+                <p class="text-left">
+                  <span class="underlined">Responsibilities:</span> Grade the
+                  students’ tasks and exams. Monitor the students during the
+                  exams. Support and guide the students during the review
+                  sessions.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <br />
+      <!--Section for academic formation-->
+      <div class="container even" id="academic">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="text-left">Academic Background:</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      SYSTEMS AND COMPUTING ENGINEERING •
+                      <span class="font-italic">(GPA: 4.56/5.00)</span>
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      AUG 2017 - OCT 2021 (EXPECTED)
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      INDUSTRIAL ENGINEERING •
+                      <span class="font-italic">(GPA: 4.56/5.00)</span>
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      AUG 2015 - MAR 2021 (EXPECTED)
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">ACADEMIC EXCHANGE</p>
+                    <p class="text-left font-weight-light">
+                      EINDHOVEN UNIVERSITY OF TECHNOLOGY - Eindhoven, The
+                      Netherlands.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      FEB 2020 – JUL 2020
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/uniandes.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">
+                      ENGINEERING LEADERSHIP PROGRAM
+                    </p>
+                    <p class="text-left font-weight-light">
+                      UNIVERSIDAD DE LOS ANDES - Bogota, Colombia.
+                    </p>
+                    <p class="text-left font-weight-light">
+                      JAN 2018 - NOV 2018
+                    </p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="logo"
+                      src="./images/pli.png"
+                      alt="Universidad de los Andes logo"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <br />
+      <!--Section for spoken languages-->
+      <div class="container odd" id="languages">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="text-left">Languages</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">SPANISH</p>
+                    <p class="text-left font-weight-light">Native</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="small"
+                      src="./images/spain.png"
+                      alt="Spain's flag"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">ENGLISH</p>
+                    <p class="text-left font-weight-light">Advanced (C1)</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="small"
+                      src="./images/uk.png"
+                      alt="United Kingdom's flag"
+                    />
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="row">
+                  <div class="col-sm-9">
+                    <p class="text-left font-weight-bold">FRENCH</p>
+                    <p class="text-left font-weight-light">Intermediate (B2)</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <img
+                      class="small"
+                      src="./images/france.png"
+                      alt="France's flag"
+                    />
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <br />
+      <!--Section for software abilities-->
+      <div class="container even" id="tech">
+        <div class="row">
+          <div class="col-sm-5">
+            <h2 class="text-left">Technology</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <ul>
+              <li>
+                <p class="text-left">
+                  Microsoft Office (Word, Advanced Excel (visual basic),
+                  PowerPoint, Access, Power BI), Java, Xpress MP (mosel), R,
+                  Python, iThink, Vensim, SQL, Simio, Auth0, JMeter, AWS,
+                  Microsoft Azure, Knime, JavaScript, HTML
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br />
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div id="footer-placeholder"></div>
+      <script>
+        $.get("footer.html", function (data) {
+          $("#footer-placeholder").replaceWith(data);
+        });
+      </script>
+    </footer>
+
+    <!--Links to bootsrap js-->
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

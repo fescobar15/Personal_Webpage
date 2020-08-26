@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta data and title-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Felipe Escobar</title>
+    <meta name="author" content="Felipe Escobar" />
+    <meta
+      name="description"
+      content="Personal website wih basic info about Felipe Escobar"
+    />
+    <!--Links to bootsrap css-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!--Link to the styles file-->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <!--Body-->
+  <body>
+    <header>
+      <div id="header-placeholder"></div>
+      <script>
+        $.get("header.html", function (data) {
+          $("#header-placeholder").replaceWith(data);
+        });
+      </script>
+    </header>
+
+    <nav id="nav-placeholder">
+      <script>
+        $.get("nav.html", function (data) {
+          $("#nav-placeholder").replaceWith(data);
+        });
+      </script>
+    </nav>
+
+    <main>
+      <!--Basic facts about Felipe-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4">
+            <h2 class="display-5">Occupation</h2>
+            <p>Student at Universidad de los Andes</p>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h2>Location</h2>
+            <p>Bogotá, Colombia</p>
+          </div>
+          <div class="col-12 col-sm-4">
+            <h2>Age</h2>
+            <p>23 years</p>
+          </div>
+        </div>
+        <br />
+        <!--Welcome message and current status-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Hi there! Welcome to my personal website.</h2>
+            <p>
+              I am currently studying Industrial Engineering and Systems &
+              Computing Engineering, expecting to graduate in early 2021.
+            </p>
+          </div>
+        </div>
+        <br />
+        <!--Felipe's interests section. Each one with a picture-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>My Interests</h2>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-4">
+            <img
+              src="./images/tech.jpeg"
+              alt="Visual representation of technology"
+            />
+            <h3 class="small-title">Technology</h3>
+          </div>
+          <div class="col-sm-4">
+            <img src="./images/sports.jpg" alt="Multiple sports objects" />
+            <h3 class="small-title">Sports</h3>
+          </div>
+          <div class="col-sm-4">
+            <img
+              src="./images/finance.jpg"
+              alt="Visual representation of finance"
+            />
+            <h3 class="small-title">Finance</h3>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="./images/f1.jpg" alt="Two F1 cars racing" />
+            <h3 class="small-title">Racing</h3>
+          </div>
+          <div class="col-sm-4">
+            <img src="./images/travel.jpg" alt="Airplane landing" />
+            <h3 class="small-title">Traveling</h3>
+          </div>
+          <div class="col-sm-4">
+            <img src="./images/cinema.jpg" alt="Person in a cinema" />
+            <h3 class="small-title">Cinema</h3>
+          </div>
+        </div>
+        <br />
+        <!--Some pictures to let the people know who is Felipe-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Some Postals!</h3>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="polaroid">
+              <img
+                src="./images/foto1.jpeg"
+                alt="Felipe Escobar in Medellín"
+                style="width: 100%"
+              />
+              <div class="container">
+                <p>Me in Medellín</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="polaroid">
+              <img
+                src="./images/foto3.jpeg"
+                alt="Felipe's dog"
+                style="width: 100%"
+              />
+              <div class="container">
+                <p>My cute dog</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="polaroid">
+              <img
+                src="./images/foto2.jpeg"
+                alt="Felipe Escobar in 'La piedra del Peñol'"
+                style="width: 100%"
+              />
+              <div class="container">
+                <p>Me in 'La piedra del Peñol'</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <!--Music from Spotify-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>My favourite music</h3>
+          </div>
+          <div class="col-sm-12">
+            <iframe
+              src="https://open.spotify.com/embed/playlist/37i9dQZEVXbOa2lmxNORXQ"
+              width="300"
+              height="380"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+        </div>
+        <br />
+        <!--Videos from YouTube-->
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Videos I Love</h3>
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-sm-6">
+            <iframe
+              width="auto"
+              height="auto"
+              src="https://www.youtube.com/embed/AhTJdMeJYCs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-sm-6">
+            <iframe
+              width="auto"
+              height="auto"
+              src="https://www.youtube.com/embed/AhTJdMeJYCs"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <br />
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div id="footer-placeholder"></div>
+      <script>
+        $.get("footer.html", function (data) {
+          $("#footer-placeholder").replaceWith(data);
+        });
+      </script>
+    </footer>
+
+    <!--Links to bootsrap js-->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
