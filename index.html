@@ -58,8 +58,27 @@
         });
       </script>
     </nav>
-
+    <br />
     <main>
+      <!--Content menu-->
+      <div class="container">
+        <h2 class="text-left">Content:</h2>
+        <ul class="menu">
+          <li class="text-left menu">
+            <a href="#interests">Interests</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#postals">Photos</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#music">Music</a>
+          </li>
+          <li class="text-left menu">
+            <a href="#videos">Videos</a>
+          </li>
+        </ul>
+      </div>
+      <br />
       <!--Basic facts about Felipe-->
       <div class="container">
         <div class="row">
@@ -89,8 +108,8 @@
         </div>
         <br />
         <!--Felipe's interests section. Each one with a picture-->
-        <div class="row">
-          <div class="col-sm-12">
+        <div class="row" id="interests">
+          <div class="col-12">
             <h2>My Interests</h2>
           </div>
         </div>
@@ -110,7 +129,7 @@
           <div class="col-sm-4">
             <img
               src="./images/finance.jpg"
-              alt="Visual representation of finance"
+              alt="Visual representation of finance (calculator)"
             />
             <h3 class="small-title">Finance</h3>
           </div>
@@ -132,8 +151,8 @@
         </div>
         <br />
         <!--Some pictures to let the people know who is Felipe-->
-        <div class="row">
-          <div class="col-sm-12">
+        <div class="row" id="postals">
+          <div class="col-12">
             <h3>Some Postals!</h3>
           </div>
         </div>
@@ -143,7 +162,7 @@
             <div class="polaroid">
               <img
                 src="./images/foto1.jpeg"
-                alt="Felipe Escobar in Medellín"
+                alt="Felipe in Medellín"
                 style="width: 100%"
               />
               <div class="container">
@@ -167,7 +186,7 @@
             <div class="polaroid">
               <img
                 src="./images/foto2.jpeg"
-                alt="Felipe Escobar in 'La piedra del Peñol'"
+                alt="Felipe in 'La piedra del Peñol'"
                 style="width: 100%"
               />
               <div class="container">
@@ -178,7 +197,7 @@
         </div>
         <br />
         <!--Music from Spotify-->
-        <div class="row">
+        <div class="row" id="music">
           <div class="col-sm-12">
             <h3>My favourite music</h3>
           </div>
@@ -195,28 +214,30 @@
         </div>
         <br />
         <!--Videos from YouTube-->
-        <div class="row">
+        <div class="row" id="videos">
           <div class="col-sm-12">
             <h3>Videos I Love</h3>
           </div>
         </div>
         <br />
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <iframe
-              width="auto"
-              height="auto"
-              src="https://www.youtube.com/embed/AhTJdMeJYCs"
+              class="video"
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/ysyc-T1gMQI"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
           </div>
-          <div class="col-sm-6">
+          <div class="col-sm-12 col-md-12 col-lg-6">
             <iframe
-              width="auto"
-              height="auto"
-              src="https://www.youtube.com/embed/AhTJdMeJYCs"
+              class="video"
+              width="560"
+              height="315"
+              src="https://www.youtube-nocookie.com/embed/nZS6a64zPH4"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

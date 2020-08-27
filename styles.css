@@ -1,8 +1,6 @@
-/*Set style for divs with class container*/
+/*Center all texts*/
 * {
   text-align: center;
-  margin: 0;
-  padding: 0;
 }
 
 /*Set style when the user hovers over a link in the navigation bar*/
@@ -30,23 +28,25 @@ h1.title {
   font-size: 1.2em;
 }
 
+/*Set size for images*/
 img {
   height: 90%;
   width: 100%;
 }
 
+/*Set size for images with this specific class (the images beside experience and academic bakground*/
 img.logo {
-  height: 60%;
-  width: 50%;
+  height: auto;
+  width: 6rem;
+  vertical-align: middle;
 }
-/*Make images with class small responsive*/
+
+/*Set size for images with this specific class (the image for the projects section)*/
 img.small {
-  max-width: 30%;
-  max-height: 65%;
-  min-width: 30%;
-  min-height: 45%;
-  height: 90%;
-  width: 100%;
+  height: auto;
+  width: 25vw;
+  min-width: 10px;
+  vertical-align: middle;
 }
 
 /*Set style for pictures with polaroid effect*/
@@ -56,14 +56,9 @@ div.polaroid {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/*Align text to the left for information sections in About page*/
-.info {
-  text-align: left;
-}
-
 /*Set background color for odd sections*/
 .odd {
-  border: solid #2ca5df;
+  background-color: #f3f3ee;
 }
 
 /*Set background color for even sections*/
@@ -71,12 +66,13 @@ div.polaroid {
   background-color: #bbe3f5;
 }
 
-/*Set background color for footer*/
+/*Set background color and padding for footer*/
 footer {
   background-color: #6df1a9;
   padding: 2px;
 }
 
+/*Style the jumbotron for the footer*/
 .jumbotron {
   background-color: #6df1a9;
   padding-top: 5px;
@@ -84,16 +80,19 @@ footer {
   margin-bottom: 0;
 }
 
+/*Set size for the images in the footer*/
 .icon {
   height: 2rem;
   width: 2rem;
 }
 
+/*Set padding and margin for the lists and list items*/
 ul li {
   padding: 10px;
   margin: 20px;
 }
 
+/*Set padding and margin for lists and list items in the navbar and in the content menus*/
 ul.navbar-bar,
 li.nav-item,
 li.menu {
@@ -101,10 +100,22 @@ li.menu {
   margin: 0px;
 }
 
+/*Set margin for all paragraphs*/
 p {
   margin-bottom: 5px;
 }
 
+/*Underline text for texts with this class*/
 .underlined {
   text-decoration: underline;
+}
+
+/*Set width for the videos.*/
+.video {
+  width: 100%;
+}
+
+/*Set color for links in the content menus*/
+a {
+  color: darkblue;
 }
